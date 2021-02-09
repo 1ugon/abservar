@@ -1,0 +1,17 @@
+.homepage {
+  background-color: black;
+  height: 100vh;
+}
+
+.video {
+}
+
+.sign {
+  background-color: white;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
