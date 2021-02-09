@@ -4,14 +4,17 @@
 }
 
 .video {
+  padding: 100px;
 }
 
 .sign {
+  padding: 1rem;
   background-color: white;
+  height: 30vh;
 }
 
 .link {
   text-decoration: none;
-  color: white;
+  color: black;
   font-weight: bold;
 }
