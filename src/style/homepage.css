@@ -1,9 +1,11 @@
 .homepage {
   background-color: black;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
 }
 
 .video {
+  text-align: center;
   padding: 100px;
 }
 
@@ -11,6 +13,14 @@
   padding: 1rem;
   background-color: white;
   height: 30vh;
+}
+
+.signimg {
+  position: fixed;
+  width: 30rem;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40%;
 }
 
 .link {
