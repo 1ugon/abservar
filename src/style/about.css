@@ -7,3 +7,22 @@
   text-align: center;
   color: white;
 }
+
+.back {
+  padding: 1rem;
+}
+
+.mainabout h1 {
+  font-size: 5rem;
+}
+
+.mainabout p {
+  text-align: left;
+  padding: 0 10rem;
+}
+
+.mainabout img {
+  width: 200px;
+  height: 200px;
+  margin-right: 1400px;
+}
