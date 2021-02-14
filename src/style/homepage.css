@@ -1,26 +1,16 @@
 .homepage {
-  background-color: black;
+  background-color: white;
   height: 100%;
   width: 100%;
+  margin-top: 1rem;
 }
 
 .video {
-  text-align: center;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 1rem;
-}
-
-.sign {
-  padding: 1rem;
-  background-color: white;
-  height: 45vh;
-}
-
-.signimg {
-  position: absolute;
-  width: 30rem;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 50%;
 }
 
 .link {
@@ -28,22 +18,33 @@
   color: black;
   font-weight: bold;
   font-size: 1.5rem;
+  margin: 1rem;
 }
 
 .arts {
-  background-color: black;
-  text-align: center;
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 1rem;
 }
 
 .motions {
-  background-color: white;
-  text-align: center;
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.motion {
   padding: 1rem;
 }
 
 .grid {
-  padding: 5rem;
+  padding: 1rem;
   display: grid;
   grid-template-columns: repeat(2, auto);
   justify-content: center;
@@ -51,23 +52,23 @@
 }
 
 .grid .art1 {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
 }
 
 .grid .art2 {
+  width: 350px;
+  height: 350px;
+}
+
+.grid .art3 {
   width: 450px;
   height: 450px;
 }
 
-.grid .art3 {
-  width: 550px;
-  height: 550px;
-}
-
 .grid .art4 {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
 }
 
 .grid img {
@@ -75,17 +76,6 @@
 }
 
 .grid img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: 1s;
-}
-
-.grid video {
-  width: 100%;
-  height: 100%;
-}
-
-@media (max-width: 960px) {
-  .signimg {
-    top: 15%;
-  }
 }
