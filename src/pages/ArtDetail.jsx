@@ -8,9 +8,14 @@ import "../style/artdetail.css";
 function ArtDetail() {
   return (
     <div className="artdetail">
-      <Link to="/">
-        <FaArrowLeft size={20} color="black" />
-      </Link>
+      <div className="backwhite">
+        <Link to="/">
+          <FaArrowLeft size={20} color="black" />
+        </Link>
+        <div className="backblack">
+          <p>Teste</p>
+        </div>
+      </div>
     </div>
   );
 }

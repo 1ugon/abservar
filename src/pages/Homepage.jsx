@@ -39,7 +39,7 @@ function Homepage() {
         <div className="arts">
           <div className="grid">
             {arts.map((art) => (
-              <Link to="/">
+              <Link to={`/art/${art.slang}`}>
                 <div key={art.id}>
                   <img
                     src={art.image}
