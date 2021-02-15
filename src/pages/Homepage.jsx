@@ -1,11 +1,10 @@
+import "../style/homepage.css";
 import React from "react";
 import { Link } from "react-router-dom";
 
-import "../style/homepage.css";
-
+import Header from "../assets/HEADER.mp4";
 import Footer from "../components/Footer";
 
-import Header from "../assets/HEADER.mp4";
 import { arts } from "../data/arts";
 import { motions } from "../data/motions";
 

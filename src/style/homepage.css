@@ -75,7 +75,22 @@
   transition: 1s;
 }
 
-.grid img:hover {
+.grid .art1:hover {
+  transform: scale(1.15);
+  transition: 1s;
+}
+
+.grid .art2:hover {
+  transform: scale(1.15);
+  transition: 1s;
+}
+
+.grid .art3:hover {
+  transform: scale(1.15);
+  transition: 1s;
+}
+
+.grid .art4:hover {
   transform: scale(1.15);
   transition: 1s;
 }
