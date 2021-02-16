@@ -5,7 +5,7 @@ import { Link, useParams } from "react-router-dom";
 import Footer from "../components/Footer";
 import About from "../pages/About";
 
-import { FaArrowLeft, FaRegCommentDots, FaEnvelope } from "react-icons/fa";
+import { FaArrowLeft, FaIdCard } from "react-icons/fa";
 
 import { useArt } from "../data/arts";
 
@@ -44,14 +44,9 @@ function ArtDetail() {
               <div className="price">
                 <h3>R${art.price},00</h3>
                 <h3 className="contato">Contato</h3>
-                <div className="buttons">
-                  <Link className="button" to="/" placeholder="teste">
-                    <FaRegCommentDots size={30} color="white" />
-                  </Link>
-                  <Link className="button" to="/">
-                    <FaEnvelope size={30} color="white" />
-                  </Link>
-                </div>
+                <Link to="/about">
+                  <FaIdCard size={30} color="white" />
+                </Link>
               </div>
             </div>
           </div>

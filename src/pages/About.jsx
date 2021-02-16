@@ -39,14 +39,18 @@ function About() {
             design
           </p>
           <div className="buttons">
-            <ReactWhatsapp
-              number="1-212-736-5000"
-              message="Olá Abservar!"
-              element="FaRegCommentDots"
-            >
-              <FaRegCommentDots size={30} color="white" />
-            </ReactWhatsapp>
-            <FaEnvelope size={30} color="white" />
+            <div className="button" title="WhatsApp">
+              <ReactWhatsapp
+                number="1-212-736-5000"
+                message="Olá Abservar!"
+                element="FaRegCommentDots"
+              >
+                <FaRegCommentDots size={30} color="white" />
+              </ReactWhatsapp>
+            </div>
+            <div className="button" title="E-mail">
+              <FaEnvelope size={30} color="white" />
+            </div>
           </div>
         </div>
       </div>
