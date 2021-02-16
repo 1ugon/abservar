@@ -10,7 +10,7 @@ import { motions } from "../data/motions";
 
 function Homepage() {
   function fadeIn() {
-    const images = document.querySelector(".grid");
+    const images = document.querySelector(".arts");
     const fade =
       document.querySelector(".fade") || document.querySelector(".fadein");
     if (images !== null) {
