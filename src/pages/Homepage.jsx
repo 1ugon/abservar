@@ -9,6 +9,20 @@ import { arts } from "../data/arts";
 import { motions } from "../data/motions";
 
 function Homepage() {
+  function fadeIn() {
+    const images = document.querySelector(".arts");
+    const fade =
+      document.querySelector(".fade") || document.querySelector(".fadein");
+    if (images !== null) {
+      this.scrollY >= arts.scrollHeight
+        ? (fade.className = "fadein")
+        : (fade.className = "fade");
+    } else {
+    }
+  }
+
+  window.addEventListener("scroll", fadeIn, false);
+
   return (
     <>
       <span className="cursor" />
@@ -37,18 +51,14 @@ function Homepage() {
           </div>
         </div>
         <div className="arts">
-          <div className="grid">
-            {arts.map((art) => (
-              <Link to={`/art/${art.slang}`}>
-                <div key={art.id}>
-                  <img
-                    src={art.image}
-                    alt={art.imagealt}
-                    className={art.class}
-                  />
-                </div>
-              </Link>
-            ))}
+          <div className="fade">
+            <div className="grid">
+              {arts.map((art) => (
+                <Link to={`/art/${art.slang}`} key={art.id}>
+                  <img src={art.image} alt={art.id} className={art.class} />
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </div>

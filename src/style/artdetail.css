@@ -22,9 +22,14 @@
   grid-gap: 2%;
 }
 
+.grid h2 {
+  padding-top: 10vh;
+}
+
 .backwhite img {
   max-height: 100%;
   max-width: 100%;
+  padding-top: 10vh;
 }
 
 .backwhite p {

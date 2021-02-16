@@ -23,3 +23,9 @@
   z-index: 2;
   mix-blend-mode: difference;
 }
+
+@media (max-width: 600px) {
+  .cursor {
+    position: relative;
+  }
+}

@@ -5,7 +5,7 @@ import { Link, useParams } from "react-router-dom";
 import Footer from "../components/Footer";
 import About from "../pages/About";
 
-import { FaArrowLeft, FaIdCard } from "react-icons/fa";
+import { FaArrowLeft, FaIdCard, FaEnvelope } from "react-icons/fa";
 
 import { useArt } from "../data/arts";
 

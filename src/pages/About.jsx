@@ -9,7 +9,11 @@ import { FaArrowLeft, FaRegCommentDots, FaEnvelope } from "react-icons/fa";
 
 import ReactWhatsapp from "react-whatsapp";
 
+import { useScrollToTop } from "../hooks/scroll";
+
 function About() {
+  useScrollToTop();
+
   return (
     <>
       <span className="cursor" />
@@ -21,11 +25,7 @@ function About() {
         </div>
         <div className="mainabout">
           <h1>404</h1>
-          <img
-            src={AboutImage}
-            alt={"an eye in a scren"}
-            className="aboutimage"
-          />
+          <img src={AboutImage} className="aboutimage" />
           <p>experimental audio-visual research</p>
           <p>based in brasília, brazil</p>
           <br />
@@ -41,15 +41,17 @@ function About() {
           <div className="buttons">
             <div className="button" title="WhatsApp">
               <ReactWhatsapp
-                number="1-212-736-5000"
-                message="Olá Abservar!"
-                element="FaRegCommentDots"
+                number="+556195518261"
+                message="Olá Abservar! Gostaria de falar com você sobre a arte que vi no seu site"
+                element="div"
               >
                 <FaRegCommentDots size={30} color="white" />
               </ReactWhatsapp>
             </div>
             <div className="button" title="E-mail">
-              <FaEnvelope size={30} color="white" />
+              <a href="mailto:abservar@gmail.com">
+                <FaEnvelope size={30} color="white" />
+              </a>
             </div>
           </div>
         </div>
