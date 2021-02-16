@@ -7,9 +7,12 @@ import Footer from "../components/Footer";
 
 import { FaArrowLeft, FaRegCommentDots, FaEnvelope } from "react-icons/fa";
 
+import ReactWhatsapp from "react-whatsapp";
+
 function About() {
   return (
     <>
+      <span className="cursor" />
       <div className="about">
         <div className="back">
           <Link to="/">
@@ -36,12 +39,14 @@ function About() {
             design
           </p>
           <div className="buttons">
-            <Link to="/" placeholder="teste">
+            <ReactWhatsapp
+              number="1-212-736-5000"
+              message="Olá Abservar!"
+              element="FaRegCommentDots"
+            >
               <FaRegCommentDots size={30} color="white" />
-            </Link>
-            <Link to="/">
-              <FaEnvelope size={30} color="white" />
-            </Link>
+            </ReactWhatsapp>
+            <FaEnvelope size={30} color="white" />
           </div>
         </div>
       </div>

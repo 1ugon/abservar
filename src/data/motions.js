@@ -1,6 +1,5 @@
 import GrayBall from "../assets/motions/GRAYBALL.mp4";
 import Janela from "../assets/motions/JANELA.mp4";
-/* import Varandas from "../assets/motions/VARANDAS.mp4"; */
 
 export const motions = [
   {

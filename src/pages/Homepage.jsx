@@ -11,6 +11,7 @@ import { motions } from "../data/motions";
 function Homepage() {
   return (
     <>
+      <span className="cursor" />
       <div className="homepage">
         <Link className="link" to="/about">
           ???

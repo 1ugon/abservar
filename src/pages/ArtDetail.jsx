@@ -9,15 +9,19 @@ import { FaArrowLeft, FaRegCommentDots, FaEnvelope } from "react-icons/fa";
 
 import { useArt } from "../data/arts";
 
+import { useScrollToTop } from "../hooks/scroll";
+
 function ArtDetail() {
   const params = useParams();
   const art = useArt(params.slang);
+  useScrollToTop();
 
   if (!art) {
     return <About />;
   } else {
     return (
       <>
+        <span className="cursor" />
         <div className="artdetail">
           <div className="back">
             <Link to="/">
@@ -43,11 +47,9 @@ function ArtDetail() {
                 <div className="buttons">
                   <Link className="button" to="/" placeholder="teste">
                     <FaRegCommentDots size={30} color="white" />
-                    WPP
                   </Link>
                   <Link className="button" to="/">
                     <FaEnvelope size={30} color="white" />
-                    EMAIL
                   </Link>
                 </div>
               </div>
