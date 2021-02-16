@@ -1,5 +1,10 @@
+@font-face {
+  font-family: "Redaction";
+  src: local("Redaction"), url(../fonts/Redaction-mL8P5.otf) format("opentype");
+}
+
 * {
-  font-family: "Redaction", sans-serif;
+  font-family: "Redaction";
   padding: 0;
   margin: 0;
   vertical-align: baseline;
