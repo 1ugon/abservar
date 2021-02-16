@@ -71,7 +71,7 @@
   height: 42vh;
 }
 
-.grid img {
+.arts .grid img {
   transition: 1s;
   margin-top: 25px;
   font-size: 21px;
