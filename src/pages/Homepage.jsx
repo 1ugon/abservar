@@ -61,8 +61,8 @@ function Homepage() {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 }

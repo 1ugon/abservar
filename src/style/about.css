@@ -89,3 +89,14 @@ img,
     opacity: 1;
   }
 }
+
+@media (max-width: 600px) {
+  .mainabout p {
+    text-align: left;
+    padding: 0 5rem;
+  }
+
+  .mainabout img {
+    margin-left: 5rem;
+  }
+}
