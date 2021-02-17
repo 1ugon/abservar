@@ -7,7 +7,6 @@ export const motions = [
     slang: "grayball",
     title: "GrayBall",
     description: "",
-    price: 0,
     video: GrayBall,
   },
   {
@@ -15,7 +14,6 @@ export const motions = [
     slang: "janela",
     title: "Janela",
     description: "",
-    price: 0,
     video: Janela,
   },
 ];
