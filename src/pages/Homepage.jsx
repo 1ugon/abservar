@@ -6,9 +6,7 @@ import Header from "../assets/HEADER.mp4";
 import Footer from "../components/Footer";
 
 import { arts } from "../data/arts";
-
-import GrayBall from "../assets/motions/GRAYBALL.mp4";
-import Janela from "../assets/motions/JANELA.mp4";
+import { motions } from "../data/motions";
 
 function Homepage() {
   function fadeIn() {
@@ -37,28 +35,19 @@ function Homepage() {
         </div>
         <div className="motions">
           <div className="grid">
-            <div key={1}>
-              <video
-                src={GrayBall}
-                width={"100%"}
-                autoPlay
-                playsInline
-                loop
-                muted
-                className="motion"
-              />
-            </div>
-            <div key={2}>
-              <video
-                src={Janela}
-                width={"100%"}
-                autoPlay
-                playsInline
-                loop
-                muted
-                className="motion"
-              />
-            </div>
+            {motions.map((motion) => (
+              <div key={motion.id}>
+                <video
+                  src={motion.video}
+                  width={"100%"}
+                  autoPlay
+                  playsInline
+                  loop
+                  muted
+                  className="motion"
+                />
+              </div>
+            ))}
           </div>
         </div>
         <div className="arts">
