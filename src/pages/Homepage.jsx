@@ -37,28 +37,24 @@ function Homepage() {
         </div>
         <div className="motions">
           <div className="grid">
-            <div key={1}>
-              <video
-                src={GrayBall}
-                width={"100%"}
-                autoPlay
-                playsInline
-                loop
-                muted
-                className="motion"
-              />
-            </div>
-            <div key={2}>
-              <video
-                src={Janela}
-                width={"100%"}
-                autoPlay
-                playsInline
-                loop
-                muted
-                className="motion"
-              />
-            </div>
+            <video
+              src={GrayBall}
+              width={"100%"}
+              autoPlay
+              playsInline
+              loop
+              muted
+              className="motion"
+            />
+            <video
+              src={Janela}
+              width={"100%"}
+              autoPlay
+              playsInline
+              loop
+              muted
+              className="motion"
+            />
           </div>
         </div>
         <div className="arts">
