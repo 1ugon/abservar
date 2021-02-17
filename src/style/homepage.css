@@ -23,16 +23,15 @@
 
 .arts {
   background-color: white;
-  height: 100vh;
+  height: 120vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
 }
 
 .motions {
   background-color: black;
-  height: 100vh;
+  height: 120vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,12 +42,11 @@
   padding: 1rem;
 }
 
-.grid {
-  padding: 1rem;
+.arts .grid {
   display: grid;
   grid-template-columns: repeat(2, auto);
   justify-content: center;
-  grid-gap: 2%;
+  grid-gap: 8%;
 }
 
 .grid .art1 {
