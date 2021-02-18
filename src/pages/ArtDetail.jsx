@@ -5,7 +5,7 @@ import { Link, useParams } from "react-router-dom";
 import Footer from "../components/Footer";
 import About from "../pages/About";
 
-import { FaArrowLeft, FaIdCard, FaEnvelope } from "react-icons/fa";
+import { FaArrowLeft, FaIdCard, FaUserCircle } from "react-icons/fa";
 
 import { useArt } from "../data/arts";
 
@@ -30,9 +30,9 @@ function ArtDetail() {
           </div>
           <div className="backwhite">
             <div className="grid">
-              <div>
+              <div className="arttext">
                 <h2>{art.title.toLocaleUpperCase()}</h2>
-                <p>{art.description}</p>
+                <p>{art.description.toLocaleLowerCase()}</p>
               </div>
               <div>
                 <img className="artimage" src={art.image} alt={art.imagealt} />
@@ -43,11 +43,17 @@ function ArtDetail() {
             <div className="center">
               <div className="price">
                 <h3>R${art.price},00</h3>
-                <h3 className="contato">Contato</h3>
-                <Link to="/about">
-                  <FaIdCard size={30} color="white" />
-                </Link>
               </div>
+            </div>
+            <div className="profile">
+              <Link to="/about">
+                <FaUserCircle
+                  size={50}
+                  color="white"
+                  title="contato"
+                  className="button"
+                />
+              </Link>
             </div>
           </div>
           <Footer />

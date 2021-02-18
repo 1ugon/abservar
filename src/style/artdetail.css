@@ -22,7 +22,8 @@
   grid-gap: 2%;
 }
 
-.grid h2 {
+.backwhite .grid h2 {
+  font-family: "Redaction 50";
   padding-top: 10vh;
 }
 
@@ -32,30 +33,43 @@
   padding-top: 10vh;
 }
 
-.backwhite p {
+.backwhite .grid p {
+  font-family: "Redaction 10";
   margin-top: 1rem;
 }
 
 .center {
-  padding: 5rem 25%;
+  position: absolute;
+  top: 10vh;
+  right: 0;
 }
 
 .price {
   background-color: white;
-  width: 150px;
-  height: 28px;
+  width: 5rem;
   border-radius: 5px;
+  padding: 1rem;
 }
 
-.contato {
-  margin-top: 3vh;
-  margin-bottom: 10px;
-  color: white;
+.profile {
+  width: 55%;
+  padding-top: 10rem;
 }
 
 .button {
-  text-decoration: none;
-  color: white;
+  transition: 5s;
+}
+
+.button:hover {
+  transition: 5s;
+  background-color: white;
+  border-radius: 90%;
+}
+
+@media (max-width: 1000px) {
+  .backwhite .arttext {
+    width: 35vh;
+  }
 }
 
 @media (max-width: 600px) {
@@ -63,15 +77,24 @@
     height: 100%;
   }
 
+  .backwhite .arttext {
+    width: 50vh;
+  }
+
   .grid {
     grid-template-columns: repeat(1, auto);
   }
 
   .center {
-    padding: 10rem 0 0 0;
+    position: relative;
     display: flex;
-    align-items: center;
-    text-align: center;
     justify-content: center;
+    padding-top: 10vh;
+  }
+
+  .profile {
+    width: 100%;
+    padding: 0;
+    padding-top: 20vh;
   }
 }

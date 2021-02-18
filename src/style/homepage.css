@@ -14,10 +14,11 @@
 }
 
 .link {
+  font-family: "Redaction 100";
   text-decoration: none;
   color: black;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 1rem;
 }
 

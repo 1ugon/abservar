@@ -8,7 +8,12 @@
 }
 
 .footer h3 {
+  font-family: "Redaction 50";
   font-weight: bold;
+}
+
+.footer p {
+  font-family: "Redaction 50";
 }
 
 .footer a {
