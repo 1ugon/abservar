@@ -30,9 +30,9 @@ function Homepage() {
         <Link className="link" to="/about">
           ???
         </Link>
-        <div className="video">
+        {/* <div className="video">
           <video src={Header} width={"100%"} autoPlay playsInline loop muted />
-        </div>
+        </div> */}
         <div className="motions">
           <div className="grid">
             {motions.map((motion) => (
