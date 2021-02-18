@@ -30,22 +30,14 @@ function Homepage() {
         <Link className="link" to="/about">
           ???
         </Link>
-        {/* <div className="video">
+        <div className="video">
           <video src={Header} width={"100%"} autoPlay playsInline loop muted />
-        </div> */}
+        </div>
         <div className="motions">
           <div className="grid">
             {motions.map((motion) => (
               <div key={motion.id}>
-                <video
-                  src={motion.video}
-                  width={"100%"}
-                  autoPlay
-                  playsInline
-                  loop
-                  muted
-                  className="motion"
-                />
+                <img src={motion.video} width={"100%"} />
               </div>
             ))}
           </div>

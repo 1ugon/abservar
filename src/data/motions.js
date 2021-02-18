@@ -1,5 +1,5 @@
-import GrayBall from "../assets/motions/GRAYBALL.mp4";
-import Janela from "../assets/motions/JANELA.mp4";
+import GrayBall from "../assets/motions/GRAYBALL.gif";
+import Janela from "../assets/motions/JANELA.gif";
 
 export const motions = [
   {
@@ -7,7 +7,6 @@ export const motions = [
     slang: "grayball",
     title: "GrayBall",
     description: "",
-    price: 0,
     video: GrayBall,
   },
   {
@@ -15,7 +14,6 @@ export const motions = [
     slang: "janela",
     title: "Janela",
     description: "",
-    price: 0,
     video: Janela,
   },
 ];
