@@ -1,17 +1,18 @@
 import "../style/artdetail.css";
-import React from "react";
+import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 
 import Footer from "../components/Footer";
 import About from "../pages/About";
 
-import { FaArrowLeft, FaIdCard, FaUserCircle } from "react-icons/fa";
+import { FaArrowLeft, FaUserCircle, FaArrowDown } from "react-icons/fa";
 
 import { useArt } from "../data/arts";
 
 import { useScrollToTop } from "../hooks/scroll";
 
 function ArtDetail() {
+  const [image, setImage] = useState(true);
   const params = useParams();
   const art = useArt(params.slang);
   useScrollToTop();
@@ -35,7 +36,16 @@ function ArtDetail() {
                 <p>{art.description.toLocaleLowerCase()}</p>
               </div>
               <div>
-                <img className="artimage" src={art.image} alt={art.imagealt} />
+                <h4>click</h4>
+                <FaArrowDown />
+                <img
+                  className="artimage"
+                  src={image ? art.imagePrimary : art.imageSecundary}
+                  id="image"
+                  onClick={() => {
+                    setImage(!image);
+                  }}
+                />
               </div>
             </div>
           </div>
@@ -46,7 +56,8 @@ function ArtDetail() {
               </div>
             </div>
             <div className="profile">
-              <Link to="/about">
+              <Link to="/about" className="linkprofile">
+                <p>contato</p>
                 <FaUserCircle
                   size={50}
                   color="white"

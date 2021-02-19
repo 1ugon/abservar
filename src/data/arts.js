@@ -3,6 +3,10 @@ import Quetiapina from "../assets/arts/QUETIAPINA.png";
 import Fluoxetina from "../assets/arts/FLUOXETINA.png";
 import MorteLentaB from "../assets/arts/B-MORTE-LENTA.png";
 
+import DesmemoriadoPrint from "../assets/prints/DESMEMORIADO.png";
+import MorteLentaPrint from "../assets/prints/MORTE-LENTA.png";
+import Negligencia from "../assets/prints/NEGLIGÊNCIA.png";
+
 export const arts = [
   {
     id: 1,
@@ -11,8 +15,8 @@ export const arts = [
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     price: 10,
-    image: MorteLentaB,
-    imagealt: "",
+    imagePrimary: MorteLentaB,
+    imageSecundary: MorteLentaPrint,
   },
   {
     id: 2,
@@ -21,8 +25,8 @@ export const arts = [
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     price: 50,
-    image: Quetiapina,
-    imagealt: "",
+    imagePrimary: Quetiapina,
+    imageSecundary: Negligencia,
   },
   {
     id: 3,
@@ -31,8 +35,8 @@ export const arts = [
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     price: 100,
-    image: Desmemoriado,
-    imagealt: "",
+    imagePrimary: Desmemoriado,
+    imageSecundary: DesmemoriadoPrint,
   },
   {
     id: 4,
@@ -41,8 +45,8 @@ export const arts = [
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     price: 200,
-    image: Fluoxetina,
-    imagealt: "",
+    imagePrimary: Fluoxetina,
+    imageSecundary: Negligencia,
   },
 ];
 

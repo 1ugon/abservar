@@ -47,7 +47,11 @@ function Homepage() {
             <div className="grid">
               {arts.map((art) => (
                 <Link to={`/art/${art.slang}`} key={art.id}>
-                  <img src={art.image} alt={art.id} className={art.class} />
+                  <img
+                    src={art.imagePrimary}
+                    alt={art.id}
+                    className={art.class}
+                  />
                 </Link>
               ))}
             </div>
