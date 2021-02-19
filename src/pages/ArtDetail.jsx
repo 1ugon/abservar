@@ -36,8 +36,7 @@ function ArtDetail() {
                 <p>{art.description.toLocaleLowerCase()}</p>
               </div>
               <div>
-                <h4>click</h4>
-                <FaArrowDown />
+                <h4>click me</h4>
                 <img
                   className="artimage"
                   src={image ? art.imagePrimary : art.imageSecundary}
