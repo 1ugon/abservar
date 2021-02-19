@@ -15,11 +15,18 @@
 }
 
 .grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.divtext {
+  width: 50%;
   padding: 1rem;
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  justify-content: center;
-  grid-gap: 2%;
+}
+
+.divimage {
+  width: 50%;
+  padding: 1rem;
 }
 
 .backwhite .grid h2 {
@@ -27,7 +34,7 @@
   padding-top: 10vh;
 }
 
-.backwhite h4 {
+.backwhite h3 {
   font-family: "Redaction 50";
   padding-top: 6vh;
 }
@@ -43,14 +50,10 @@
   margin-top: 1rem;
 }
 
-.center {
+.price {
   position: absolute;
   top: 10vh;
   right: 0;
-}
-
-.price {
-  outline: 2px solid black;
   background-color: white;
   width: 5rem;
   border-radius: 5px;
@@ -62,16 +65,11 @@
 }
 
 .profile {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
-  padding: 10rem 0;
+  width: 52%;
 }
 
-.profile .linkprofile {
-  text-decoration: none;
-  color: white;
+.profile img {
+  width: 100%;
 }
 
 .button {
@@ -84,22 +82,41 @@
   border-radius: 90%;
 }
 
-.profile p {
-  font-family: "Redaction 100";
+.artimagesec {
+  display: none;
+}
+
+.nextimage {
+  cursor: pointer;
+}
+
+.imagenext {
+  width: 15px;
+  margin-left: 15px;
+}
+
+@media (max-width: 1400px) {
+  .backwhite img {
+    max-width: 70vh;
+    max-height: 70vh;
+  }
+}
+
+@media (max-width: 1200px) {
+  .backwhite img {
+    max-width: 60vh;
+    max-height: 60vh;
+  }
 }
 
 @media (max-width: 1000px) {
-  .backwhite .arttext {
-    width: 35vh;
-  }
-
   .backwhite img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 50vh;
+    max-height: 50vh;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .backwhite {
     height: 100%;
   }
@@ -109,23 +126,34 @@
   }
 
   .backblack {
-    height: 100%;
+    height: 50%;
   }
 
   .grid {
+    display: grid;
     grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    grid-gap: 2%;
   }
 
-  .center {
-    position: relative;
+  .price {
     display: flex;
     justify-content: center;
-    padding-top: 30vh;
+    top: 60vh;
   }
 
   .profile {
+    display: flex;
+    justify-content: center;
+    padding-top: 20vh;
     width: 100%;
-    padding: 0;
-    padding-top: 30vh;
+  }
+
+  .divtext {
+    width: 100%;
+  }
+
+  .divimage {
+    width: 100%;
   }
 }

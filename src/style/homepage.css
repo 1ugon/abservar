@@ -39,6 +39,10 @@
   padding: 1rem;
 }
 
+.motions .grid {
+  grid-gap: 10%;
+}
+
 .arts .grid {
   display: grid;
   grid-template-columns: repeat(2, auto);

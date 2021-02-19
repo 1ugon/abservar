@@ -4,7 +4,7 @@ import Fluoxetina from "../assets/arts/FLUOXETINA.png";
 import MorteLentaB from "../assets/arts/B-MORTE-LENTA.png";
 
 import DesmemoriadoPrint from "../assets/prints/DESMEMORIADO.png";
-import MorteLentaPrint from "../assets/prints/MORTE-LENTA.png";
+import MorteLentaPrint from "../assets/prints/MORTE-LENTA-SIDE-B.png";
 import Negligencia from "../assets/prints/NEGLIGÊNCIA.png";
 
 export const arts = [
@@ -12,11 +12,13 @@ export const arts = [
     id: 1,
     slang: "mortelenta",
     title: "Morte Lenta (interlúdio)",
-    desc: "essa track faz parte do ep. NEGLIGÊNCIA (2021)",
-    desclink: "https://abservar.bandcamp.com/album/neglig-ncia",
-    descfull:
-      "agora você pode contribuir com o projeto adquirindo 2 obras limitadas tamanho A2 (42,0 x 59,4 cm) em papel Couché [PRETO; BRANCO]",
-    tags: "#experimental #soundart #eletric #hal9000",
+    link: "https://abservar.bandcamp.com/album/neglig-ncia",
+    desc:
+      "essa track faz parte do ep. NEGLIGÊNCIA (2020), você pode apoiar esse projeto adquirindo uma das obras originais.",
+    descsec: "Disponível na versão A e versão B [limitado]",
+    paper: "Couché 300g",
+    dimension: "A2 (42,0 x 59,4 cm)",
+    year: "2021",
     price: 10,
     imagePrimary: MorteLentaB,
     imageSecundary: MorteLentaPrint,
@@ -25,11 +27,13 @@ export const arts = [
     id: 2,
     slang: "quetiapina",
     title: "Quetiapina",
-    desc: "essa track faz parte do ep. NEGLIGÊNCIA (2021)",
-    desclink: "https://abservar.bandcamp.com/album/neglig-ncia",
-    descfull:
-      "agora você pode contribuir com o projeto adquirindo uma obra limitada tamanho A2 (42,0 x 59,4 cm) em papel Couché [PRETO]",
-    tags: "#experimental #grime #techno #drill #160bpm",
+    link: "https://abservar.bandcamp.com/album/neglig-ncia",
+    desc:
+      "essa track faz parte do ep. NEGLIGÊNCIA (2020), você pode apoiar esse projeto adquirindo uma das obras originais.",
+    descsec: "",
+    paper: "Couché 300g",
+    dimension: "A2 (42,0 x 59,4 cm)",
+    year: "2020",
     price: 50,
     imagePrimary: Quetiapina,
     imageSecundary: Negligencia,
@@ -38,11 +42,14 @@ export const arts = [
     id: 3,
     slang: "desmemoriado",
     title: "Desmemoriado",
-    desc: "track lançada em setembro de 2020",
-    desclink: "https://abservar.bandcamp.com/track/desmemoriado",
-    descfull:
-      "a sensação descrita foi de chegar ao topo de uma montanha e encontrar vários monstros voando ao seu redor. assustado, sem poder confiar em ninguém e o frio na barriga de uma queda sem fim. colagem sonora usando samples de spray, moeda, xícara, corrente, garrafa, chave+",
-    tags: "#experimental #acid #downtempo",
+    link: "https://abservar.bandcamp.com/track/desmemoriado",
+    desc:
+      "a sensação descrita foi de chegar ao topo de uma montanha e encontrar vários monstros voando ao seu redor. assustado, sem poder confiar em ninguém e o frio na barriga de uma queda sem fim.",
+    descsec:
+      "colagem sonora usando spray, moeda, xícara, corrente, garrafa, chave+",
+    paper: "",
+    dimension: "",
+    year: "2020",
     price: 100,
     imagePrimary: Desmemoriado,
     imageSecundary: DesmemoriadoPrint,
@@ -51,11 +58,13 @@ export const arts = [
     id: 4,
     slang: "fluoxetina",
     title: "Fluoxetina",
-    desc: "essa track faz parte do ep. NEGLIGÊNCIA (2021)",
-    desclink: "https://abservar.bandcamp.com/album/neglig-ncia",
-    descfull:
-      "agora você pode contribuir com o projeto adquirindo uma obra limitada tamanho A2 (42,0 x 59,4 cm) em papel Couché [PRETO]",
-    tags: "#experimental  #techno #afrobeat #hardbass #160bpm",
+    link: "https://abservar.bandcamp.com/album/neglig-ncia",
+    desc:
+      "essa track faz parte do ep. NEGLIGÊNCIA (2020), você pode apoiar esse projeto adquirindo uma das obras originais.",
+    descsec: "",
+    paper: "Couché 300g",
+    dimension: "A2 (42,0 x 59,4 cm)",
+    year: "2020",
     price: 200,
     imagePrimary: Fluoxetina,
     imageSecundary: Negligencia,
