@@ -20,12 +20,12 @@
 }
 
 .divtext {
-  width: 50%;
+  width: 100%;
   padding: 1rem;
 }
 
 .divimage {
-  width: 50%;
+  width: 80%;
   padding: 1rem;
 }
 
@@ -119,14 +119,12 @@
 @media (max-width: 800px) {
   .backwhite {
     height: 100%;
-  }
-
-  .backwhite .arttext {
-    width: 50vh;
+    width: 100%;
   }
 
   .backblack {
-    height: 50%;
+    height: 100%;
+    width: 100%;
   }
 
   .grid {
@@ -136,24 +134,33 @@
     grid-gap: 2%;
   }
 
+  .divtext {
+    width: 90%;
+  }
+
+  .divimage {
+    width: 90%;
+  }
+
   .price {
-    display: flex;
-    justify-content: center;
-    top: 60vh;
+    position: relative;
   }
 
   .profile {
     display: flex;
     justify-content: center;
-    padding-top: 20vh;
+    padding-top: 30vh;
     width: 100%;
   }
 
-  .divtext {
-    width: 100%;
+  .artimage {
+    justify-content: center;
+    align-items: center;
   }
 
-  .divimage {
-    width: 100%;
+  .artimagesec {
+    display: none;
+    justify-content: center;
+    align-items: center;
   }
 }

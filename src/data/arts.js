@@ -4,7 +4,7 @@ import Fluoxetina from "../assets/arts/FLUOXETINA.png";
 import MorteLentaB from "../assets/arts/B-MORTE-LENTA.png";
 
 import DesmemoriadoPrint from "../assets/prints/DESMEMORIADO.png";
-import MorteLentaPrint from "../assets/prints/MORTE-LENTA-SIDE-B.png";
+import MorteLentaPrint from "../assets/prints/MORTE-LENTA.png";
 import Negligencia from "../assets/prints/NEGLIGÊNCIA.png";
 
 export const arts = [
