@@ -7,16 +7,12 @@
   text-align: center;
 }
 
-.footer h3 {
-  font-family: "Redaction 50";
-  font-weight: bold;
-}
-
-.footer p {
+.footer h4 {
   font-family: "Redaction 50";
 }
 
 .footer a {
+  font-family: "Redaction 50";
   text-decoration: none;
   color: #aaa;
 }

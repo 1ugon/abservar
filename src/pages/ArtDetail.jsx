@@ -1,8 +1,7 @@
 import "../style/artdetail.css";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 
-import Footer from "../components/Footer";
 import About from "../pages/About";
 
 import { FaArrowLeft, FaUserCircle } from "react-icons/fa";
@@ -17,6 +16,23 @@ function ArtDetail() {
   const art = useArt(params.slang);
 
   useScrollToTop();
+
+  useEffect(() => {
+    function priceOn() {
+      const price =
+        document.querySelector(".price") || document.querySelector(".priceoff");
+      if (price === null) {
+      } else {
+        if (image) {
+          price.className = "priceoff";
+        } else {
+          price.className = "price";
+        }
+      }
+    }
+
+    priceOn();
+  }, [image]);
 
   if (!art) {
     return <About />;
@@ -34,7 +50,20 @@ function ArtDetail() {
             <div className="grid">
               <div className="arttext">
                 <h2>{art.title.toLocaleUpperCase()}</h2>
-                <p>{art.description.toLocaleLowerCase()}</p>
+                <p>{art.desc.toLocaleLowerCase()}</p>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href={art.desclink}
+                  style={{
+                    textDecoration: "none",
+                    color: "black",
+                    fontSize: "1.5rem",
+                  }}
+                >
+                  <h4 style={{ padding: 10 }}>link</h4>
+                </a>
+                <p>{art.descfull}</p>
               </div>
               <div>
                 <h4>click me</h4>
@@ -51,7 +80,7 @@ function ArtDetail() {
           </div>
           <div className="backblack">
             <div className="center">
-              <div className="price">
+              <div className="priceoff">
                 <h3>R${art.price},00</h3>
               </div>
             </div>
@@ -67,7 +96,6 @@ function ArtDetail() {
               </Link>
             </div>
           </div>
-          <Footer />
         </div>
       </>
     );

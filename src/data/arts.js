@@ -10,10 +10,13 @@ import Negligencia from "../assets/prints/NEGLIGÊNCIA.png";
 export const arts = [
   {
     id: 1,
-    slang: "mortelentab",
-    title: "Morte Lenta B",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    slang: "mortelenta",
+    title: "Morte Lenta (interlúdio)",
+    desc: "essa track faz parte do ep. NEGLIGÊNCIA (2021)",
+    desclink: "https://abservar.bandcamp.com/album/neglig-ncia",
+    descfull:
+      "agora você pode contribuir com o projeto adquirindo 2 obras limitadas tamanho A2 (42,0 x 59,4 cm) em papel Couché [PRETO; BRANCO]",
+    tags: "#experimental #soundart #eletric #hal9000",
     price: 10,
     imagePrimary: MorteLentaB,
     imageSecundary: MorteLentaPrint,
@@ -22,8 +25,11 @@ export const arts = [
     id: 2,
     slang: "quetiapina",
     title: "Quetiapina",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    desc: "essa track faz parte do ep. NEGLIGÊNCIA (2021)",
+    desclink: "https://abservar.bandcamp.com/album/neglig-ncia",
+    descfull:
+      "agora você pode contribuir com o projeto adquirindo uma obra limitada tamanho A2 (42,0 x 59,4 cm) em papel Couché [PRETO]",
+    tags: "#experimental #grime #techno #drill #160bpm",
     price: 50,
     imagePrimary: Quetiapina,
     imageSecundary: Negligencia,
@@ -32,8 +38,11 @@ export const arts = [
     id: 3,
     slang: "desmemoriado",
     title: "Desmemoriado",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    desc: "track lançada em setembro de 2020",
+    desclink: "https://abservar.bandcamp.com/track/desmemoriado",
+    descfull:
+      "a sensação descrita foi de chegar ao topo de uma montanha e encontrar vários monstros voando ao seu redor. assustado, sem poder confiar em ninguém e o frio na barriga de uma queda sem fim. colagem sonora usando samples de spray, moeda, xícara, corrente, garrafa, chave+",
+    tags: "#experimental #acid #downtempo",
     price: 100,
     imagePrimary: Desmemoriado,
     imageSecundary: DesmemoriadoPrint,
@@ -42,8 +51,11 @@ export const arts = [
     id: 4,
     slang: "fluoxetina",
     title: "Fluoxetina",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    desc: "essa track faz parte do ep. NEGLIGÊNCIA (2021)",
+    desclink: "https://abservar.bandcamp.com/album/neglig-ncia",
+    descfull:
+      "agora você pode contribuir com o projeto adquirindo uma obra limitada tamanho A2 (42,0 x 59,4 cm) em papel Couché [PRETO]",
+    tags: "#experimental  #techno #afrobeat #hardbass #160bpm",
     price: 200,
     imagePrimary: Fluoxetina,
     imageSecundary: Negligencia,

@@ -4,13 +4,13 @@
 
 .backwhite {
   background-color: white;
-  height: 50vh;
+  height: 55vh;
   text-align: center;
 }
 
 .backblack {
   background-color: black;
-  height: 50vh;
+  height: 55vh;
   text-align: center;
 }
 
@@ -50,13 +50,21 @@
 }
 
 .price {
+  outline: 2px solid black;
   background-color: white;
   width: 5rem;
   border-radius: 5px;
   padding: 1rem;
 }
 
+.priceoff {
+  display: none;
+}
+
 .profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 50%;
   padding: 10rem 0;
 }

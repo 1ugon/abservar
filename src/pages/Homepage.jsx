@@ -3,7 +3,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import Header from "../assets/HEADER.mp4";
-import Footer from "../components/Footer";
 
 import { arts } from "../data/arts";
 import { motions } from "../data/motions";
@@ -13,11 +12,11 @@ function Homepage() {
     const images = document.querySelector(".arts");
     const fade =
       document.querySelector(".fade") || document.querySelector(".fadein");
-    if (images !== null) {
+    if (images === null) {
+    } else {
       this.scrollY >= images.scrollHeight
         ? (fade.className = "fadein")
         : (fade.className = "fade");
-    } else {
     }
   }
 
@@ -57,7 +56,6 @@ function Homepage() {
             </div>
           </div>
         </div>
-        <Footer />
       </div>
     </>
   );

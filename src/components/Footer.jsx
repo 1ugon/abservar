@@ -5,13 +5,10 @@ import "../style/footer.css";
 function Footer() {
   return (
     <div className="footer">
-      <h3>ABSERVAR © {new Date().getFullYear()}</h3>
-      <p>
-        Made by{" "}
-        <a target="_blank" rel="noreferrer" href="https://lugon.dev">
-          lugon.dev
-        </a>
-      </p>
+      <h4>ABSERVAR © {new Date().getFullYear()}</h4>
+      <a target="_blank" rel="noreferrer" href="https://lugon.dev">
+        made by lugon.dev
+      </a>
     </div>
   );
 }
