@@ -38,11 +38,10 @@
 }
 
 .mainabout h1,
-h2,
-p,
-img,
+.mainabout h2,
+.mainabout p,
+.mainabout img,
 .buttons,
-.price,
 .contato {
   animation: fadein 3s;
   -moz-animation: fadein 3s; /* Firefox */

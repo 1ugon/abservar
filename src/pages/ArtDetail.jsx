@@ -5,7 +5,7 @@ import { Link, useParams } from "react-router-dom";
 import Footer from "../components/Footer";
 import About from "../pages/About";
 
-import { FaArrowLeft, FaUserCircle, FaArrowDown } from "react-icons/fa";
+import { FaArrowLeft, FaUserCircle } from "react-icons/fa";
 
 import { useArt } from "../data/arts";
 
@@ -15,6 +15,7 @@ function ArtDetail() {
   const [image, setImage] = useState(true);
   const params = useParams();
   const art = useArt(params.slang);
+
   useScrollToTop();
 
   if (!art) {
