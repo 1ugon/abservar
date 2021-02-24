@@ -24,6 +24,10 @@
   padding: 1rem;
 }
 
+.artinfo {
+  font-size: 1.2rem;
+}
+
 .divimage {
   width: 80%;
   padding: 1rem;
@@ -45,6 +49,11 @@
   padding-top: 1vh;
 }
 
+.playicon {
+  width: 25px;
+  margin-left: 0.4rem;
+}
+
 .backwhite .grid p {
   font-family: "Redaction 10";
   margin-top: 1rem;
@@ -64,6 +73,14 @@
   display: none;
 }
 
+.infos {
+  padding-top: 2rem;
+  color: white;
+  width: 52%;
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
 .profile {
   width: 52%;
 }
@@ -80,10 +97,6 @@
   transition: 5s;
   background-color: white;
   border-radius: 90%;
-}
-
-.artimagesec {
-  display: none;
 }
 
 .nextimage {
@@ -144,12 +157,13 @@
 
   .price {
     position: relative;
+    top: 1%;
   }
 
   .profile {
     display: flex;
     justify-content: center;
-    padding-top: 30vh;
+    padding-top: 5vh;
     width: 100%;
   }
 
@@ -158,9 +172,11 @@
     align-items: center;
   }
 
-  .artimagesec {
-    display: none;
-    justify-content: center;
-    align-items: center;
+  .infos {
+    padding-top: 8rem;
+    color: white;
+    width: 100%;
+    font-size: 0.8rem;
+    font-weight: normal;
   }
 }

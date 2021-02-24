@@ -14,7 +14,7 @@ export const arts = [
     desc:
       "essa track faz parte do ep. NEGLIGÊNCIA (2020), você pode apoiar esse projeto adquirindo uma das obras originais.",
     descsec:
-      "Disponível na versão A e versão B por tempo limitado, o de fundo branco 50 reais e o de fundo preto 100",
+      "Disponível na versão A e versão B por tempo limitado, r$50 com fundo branco e r$100 preto",
     paper: "Couché 300g",
     dimension: "A2 (42,0 x 59,4 cm)",
     year: "2021",

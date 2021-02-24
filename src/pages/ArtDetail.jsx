@@ -11,7 +11,7 @@ import { useArt } from "../data/arts";
 import { useScrollToTop } from "../hooks/scroll";
 
 import Contact from "../assets/contact.png";
-import NextImage from "../assets/nextimage.png";
+import Play from "../assets/play.png";
 
 function ArtDetail() {
   const [image, setImage] = useState(true);
@@ -20,30 +20,25 @@ function ArtDetail() {
 
   useScrollToTop();
 
-  function showArt() {
+  useEffect(() => {
     const price =
       document.querySelector(".price") || document.querySelector(".priceoff");
-
-    const art1 = document.querySelector(".artimage");
-    const art2 = document.querySelector(".artimagesec");
-
-    if (art1 === null && art2 === null && price === null) {
+    if (price === null) {
+    }
+    if (image) {
+      price.className = "priceoff";
     } else {
-      if (image) {
-        art1.className = "artimage";
-        art2.className = "artimagesec";
-        price.className = "priceoff";
-      } else {
-        art2.className = "artimage";
-        art1.className = "artimagesec";
-        price.className = "price";
-      }
+      price.className = "price";
+    }
+  }, [image]);
+
+  function getImage() {
+    if (image) {
+      return art.imagePrimary;
+    } else {
+      return art.imageSecundary;
     }
   }
-
-  useEffect(() => {
-    showArt();
-  }, [image]);
 
   if (!art) {
     return <About />;
@@ -68,31 +63,24 @@ function ArtDetail() {
                     style={{ textDecoration: "none", color: "black" }}
                   >
                     {art.title.toLocaleUpperCase()}
+                    <img src={Play} className="playicon" />
                   </a>
                 </h2>
-                <p>{art.desc.toLocaleLowerCase()}</p>
-                {art.descsec === "" ? (
-                  ""
-                ) : (
-                  <p>{art.descsec.toLocaleLowerCase()}</p>
-                )}
-                {art.paper === "" ? "" : <p>Papel:</p>}
-                {art.paper === "" ? "" : <p>- {art.paper}</p>}
-                {art.dimension === "" ? "" : <p>Dimensão: </p>}
-                {art.dimension === "" ? "" : <p> {art.dimension}</p>}
-                {art.year === "" ? "" : <p>Ano: </p>}
-                {art.year === "" ? "" : <p>– {art.year} </p>}
+                <div className="artinfo">
+                  <p>{art.desc.toLocaleLowerCase()}</p>
+                  {art.descsec === "" ? (
+                    ""
+                  ) : (
+                    <p>{art.descsec.toLocaleLowerCase()}</p>
+                  )}
+                </div>
               </div>
               <div>
                 <div className="divimage">
-                  <h3 className="nextimage" onClick={() => setImage(!image)}>
-                    clique uma ou duas vezes
-                    <img src={NextImage} className="imagenext" />
+                  <h3 className="nextimage">
+                    clique na imagem
                     <div className="artimage">
-                      <img src={art.imagePrimary} />
-                    </div>
-                    <div className="artimagesec">
-                      <img src={art.imageSecundary} />
+                      <img src={getImage()} onClick={() => setImage(!image)} />
                     </div>
                   </h3>
                 </div>
@@ -102,6 +90,14 @@ function ArtDetail() {
           <div className="backblack">
             <div className="priceoff">
               <h3>R${art.price}</h3>
+            </div>
+            <div className="infos">
+              {art.paper === "" ? "" : <p>Papel:</p>}
+              {art.paper === "" ? "" : <p>- {art.paper}</p>}
+              {art.dimension === "" ? "" : <p>Dimensão: </p>}
+              {art.dimension === "" ? "" : <p> {art.dimension}</p>}
+              {art.year === "" ? "" : <p>Ano: </p>}
+              {art.year === "" ? "" : <p>– {art.year} </p>}
             </div>
             <div className="profile">
               <Link to="/about">
