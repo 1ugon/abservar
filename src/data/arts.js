@@ -1,9 +1,7 @@
-import Desmemoriado from "../assets/arts/DESMEMORIADO.png";
 import Quetiapina from "../assets/arts/QUETIAPINA.png";
 import Fluoxetina from "../assets/arts/FLUOXETINA.png";
 import MorteLentaB from "../assets/arts/B-MORTE-LENTA.png";
 
-import DesmemoriadoPrint from "../assets/prints/DESMEMORIADO.png";
 import MorteLentaPrint from "../assets/prints/MORTE-LENTA.png";
 import Negligencia from "../assets/prints/NEGLIGÊNCIA.png";
 
@@ -15,11 +13,12 @@ export const arts = [
     link: "https://abservar.bandcamp.com/album/neglig-ncia",
     desc:
       "essa track faz parte do ep. NEGLIGÊNCIA (2020), você pode apoiar esse projeto adquirindo uma das obras originais.",
-    descsec: "Disponível na versão A e versão B [limitado]",
+    descsec:
+      "Disponível na versão A e versão B por tempo limitado, o de fundo branco 50 reais e o de fundo preto 100",
     paper: "Couché 300g",
     dimension: "A2 (42,0 x 59,4 cm)",
     year: "2021",
-    price: 10,
+    price: "50/100",
     imagePrimary: MorteLentaB,
     imageSecundary: MorteLentaPrint,
   },
@@ -34,28 +33,12 @@ export const arts = [
     paper: "Couché 300g",
     dimension: "A2 (42,0 x 59,4 cm)",
     year: "2020",
-    price: 50,
+    price: 100,
     imagePrimary: Quetiapina,
     imageSecundary: Negligencia,
   },
   {
     id: 3,
-    slang: "desmemoriado",
-    title: "Desmemoriado",
-    link: "https://abservar.bandcamp.com/track/desmemoriado",
-    desc:
-      "a sensação descrita foi de chegar ao topo de uma montanha e encontrar vários monstros voando ao seu redor. assustado, sem poder confiar em ninguém e o frio na barriga de uma queda sem fim.",
-    descsec:
-      "colagem sonora usando spray, moeda, xícara, corrente, garrafa, chave+",
-    paper: "",
-    dimension: "",
-    year: "2020",
-    price: 100,
-    imagePrimary: Desmemoriado,
-    imageSecundary: DesmemoriadoPrint,
-  },
-  {
-    id: 4,
     slang: "fluoxetina",
     title: "Fluoxetina",
     link: "https://abservar.bandcamp.com/album/neglig-ncia",
@@ -65,7 +48,7 @@ export const arts = [
     paper: "Couché 300g",
     dimension: "A2 (42,0 x 59,4 cm)",
     year: "2020",
-    price: 200,
+    price: 100,
     imagePrimary: Fluoxetina,
     imageSecundary: Negligencia,
   },

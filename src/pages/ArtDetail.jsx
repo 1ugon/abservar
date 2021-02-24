@@ -101,7 +101,7 @@ function ArtDetail() {
           </div>
           <div className="backblack">
             <div className="priceoff">
-              <h3>R${art.price},00</h3>
+              <h3>R${art.price}</h3>
             </div>
             <div className="profile">
               <Link to="/about">
