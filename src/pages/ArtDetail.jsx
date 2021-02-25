@@ -79,7 +79,9 @@ function ArtDetail() {
               <div>
                 <div className="divimage">
                   <h3 className="nextimage">
-                    clique na imagem
+                    {art.imagePrimary === art.imageSecundary
+                      ? ""
+                      : "clique na imagem"}
                     <div className="artimage">
                       <img src={getImage()} onClick={() => setImage(!image)} />
                     </div>
