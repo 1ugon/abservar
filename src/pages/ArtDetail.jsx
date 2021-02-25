@@ -63,6 +63,7 @@ function ArtDetail() {
                     style={{ textDecoration: "none", color: "black" }}
                   >
                     {art.title.toLocaleUpperCase()}
+                    <br />
                     <img src={Play} className="playicon" />
                   </a>
                 </h2>
