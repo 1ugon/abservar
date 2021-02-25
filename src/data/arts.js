@@ -57,7 +57,7 @@ export const arts = [
     id: 4,
     slang: "desmemoriado",
     title: "Desmemoriado",
-    link: "#",
+    link: "https://abservar.bandcamp.com/track/desmemoriado",
     desc:
       "experimento de composição usando sons do cotidiano como spray, moeda, xícara, chave+",
     descsec: "setembro de 2020",
