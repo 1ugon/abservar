@@ -5,7 +5,6 @@ import Desmemoriado from "../assets/arts/DESMEMORIADO.png";
 
 import MorteLentaPrint from "../assets/prints/MORTE-LENTA.png";
 import Negligencia from "../assets/prints/NEGLIGÊNCIA.png";
-import DesmemoriadoPrint from "../assets/prints/DESMEMORIADO.png";
 
 export const arts = [
   {
@@ -60,14 +59,14 @@ export const arts = [
     title: "Desmemoriado",
     link: "#",
     desc:
-      "essa track faz parte do ep. NEGLIGÊNCIA (2020), você pode apoiar esse projeto adquirindo uma das obras originais.",
-    descsec: "",
-    paper: "Couché 300g",
-    dimension: "A2 (42,0 x 59,4 cm)",
-    year: "2020",
-    price: 100,
+      "experimento de composição usando sons do cotidiano como spray, moeda, xícara, chave+",
+    descsec: "setembro de 2020",
+    paper: "",
+    dimension: "",
+    year: "",
+    price: "",
     imagePrimary: Desmemoriado,
-    imageSecundary: DesmemoriadoPrint,
+    imageSecundary: Desmemoriado,
   },
 ];
 
