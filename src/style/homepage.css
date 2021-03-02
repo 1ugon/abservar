@@ -2,37 +2,38 @@
   background-color: white;
   height: 100%;
   width: 100%;
-  margin-top: 3rem;
 }
 
-.video {
-  height: 90vh;
+.mainabout {
+  height: 85vh;
+  padding: 5vh 0;
+}
+
+.aboutcel {
+  display: none;
+}
+
+.nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
 }
 
-.link {
-  font-family: "Redaction 100";
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  font-size: 2rem;
-  margin: 1.5rem;
+.button {
+  cursor: pointer;
+  padding: 1rem 0.5rem;
 }
 
 .arts {
   background-color: white;
-  height: 120vh;
-  display: flex;
+  height: 300vh;
   justify-content: center;
   align-items: center;
 }
 
 .motions {
   background-color: black;
-  height: 120vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,21 +41,23 @@
 }
 
 .motions .grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
   grid-gap: 10%;
 }
 
 .arts .grid {
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: repeat(1, auto);
   justify-content: center;
-  grid-gap: 4%;
 }
 
 .arts .grid img {
-  width: 43vh;
-  height: 43vh;
+  width: 70vh;
+  height: 70vh;
   transition: 1s;
-  margin-top: 25px;
+  margin: 0.5rem;
 }
 
 .arts .grid img:hover {
@@ -106,6 +109,13 @@
 }
 
 @media (max-width: 900px) {
+  .aboutvideo {
+    display: none;
+  }
+
+  .aboutcel {
+    display: inline;
+  }
   .arts .grid img {
     width: 33vh;
     height: 33vh;
@@ -135,5 +145,10 @@
     grid-template-columns: repeat(1, auto);
     grid-gap: 0%;
     padding: 5rem;
+  }
+
+  .mainabout p {
+    text-align: left;
+    padding: 0 5rem;
   }
 }

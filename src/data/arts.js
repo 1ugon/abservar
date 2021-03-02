@@ -11,13 +11,11 @@ export const arts = [
     id: 1,
     slang: "mortelenta",
     title: "Morte Lenta (interlúdio)",
-    link: "https://abservar.bandcamp.com/album/neglig-ncia",
-    desc:
+    /* link: "https://abservar.bandcamp.com/album/neglig-ncia", */
+    descprim:
       "essa track faz parte do ep. NEGLIGÊNCIA (2020), você pode apoiar esse projeto adquirindo uma das obras originais.",
     descsec:
       "Disponível na versão A e versão B por tempo limitado, r$50 com fundo branco e r$100 preto",
-    paper: "Couché 300g",
-    dimension: "A2 (42,0 x 59,4 cm)",
     year: "2021",
     price: "50/100",
     imagePrimary: MorteLentaB,
@@ -28,11 +26,9 @@ export const arts = [
     slang: "quetiapina",
     title: "Quetiapina",
     link: "https://abservar.bandcamp.com/album/neglig-ncia",
-    desc:
+    descprim:
       "essa track faz parte do ep. NEGLIGÊNCIA (2020), você pode apoiar esse projeto adquirindo uma das obras originais.",
     descsec: "",
-    paper: "Couché 300g",
-    dimension: "A2 (42,0 x 59,4 cm)",
     year: "2020",
     price: 100,
     imagePrimary: Quetiapina,
@@ -43,11 +39,9 @@ export const arts = [
     slang: "fluoxetina",
     title: "Fluoxetina",
     link: "https://abservar.bandcamp.com/album/neglig-ncia",
-    desc:
+    descprim:
       "essa track faz parte do ep. NEGLIGÊNCIA (2020), você pode apoiar esse projeto adquirindo uma das obras originais.",
     descsec: "",
-    paper: "Couché 300g",
-    dimension: "A2 (42,0 x 59,4 cm)",
     year: "2020",
     price: 100,
     imagePrimary: Fluoxetina,
@@ -58,11 +52,9 @@ export const arts = [
     slang: "desmemoriado",
     title: "Desmemoriado",
     link: "https://abservar.bandcamp.com/track/desmemoriado",
-    desc:
+    descprim:
       "experimento de composição usando sons do cotidiano como spray, moeda, xícara, chave+",
     descsec: "setembro de 2020",
-    paper: "",
-    dimension: "",
     year: "",
     price: "",
     imagePrimary: Desmemoriado,

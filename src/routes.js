@@ -2,7 +2,7 @@ import { Switch, Route } from "react-router-dom";
 
 import Homepage from "./pages/Homepage";
 import ArtDetail from "./pages/ArtDetail";
-import About from "./pages/About";
+import Error from "./pages/Error";
 
 export default function Routes() {
   return (
@@ -14,7 +14,7 @@ export default function Routes() {
         <ArtDetail />
       </Route>
       <Route path="*">
-        <About />
+        <Error />
       </Route>
     </Switch>
   );

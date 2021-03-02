@@ -2,19 +2,27 @@ import "../style/homepage.css";
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Header from "../assets/HEADER.mp4";
+import AboutVideo from "../assets/ABOUT.mp4";
+import Footer from "../components/Footer";
+
+import { FaRegCommentDots, FaEnvelope } from "react-icons/fa";
+import ReactWhatsapp from "react-whatsapp";
+
+import { useScrollToTop } from "../hooks/scroll";
 
 import { arts } from "../data/arts";
 import { motions } from "../data/motions";
 
 function Homepage() {
+  useScrollToTop();
+
   function fadeIn() {
-    const images = document.querySelector(".arts");
+    const images = document.querySelector(".motions");
     const fade =
       document.querySelector(".fade") || document.querySelector(".fadein");
     if (images === null) {
     } else {
-      this.scrollY >= images.scrollHeight
+      this.scrollY >= images.scrollHeight + 50
         ? (fade.className = "fadein")
         : (fade.className = "fade");
     }
@@ -26,11 +34,46 @@ function Homepage() {
     <>
       <span className="cursor" />
       <div className="homepage">
-        <Link className="link" to="/about">
-          ???
-        </Link>
-        <div className="video">
-          <video src={Header} width={"100%"} autoPlay playsInline loop muted />
+        <div className="nav">
+          <div className="button" title="whatsapp">
+            <ReactWhatsapp
+              number="+556195518261"
+              message="oi, abservar! 👁"
+              element="div"
+            >
+              <FaRegCommentDots size={50} color="black" />
+            </ReactWhatsapp>
+          </div>
+          <div className="button" title="e-mail">
+            <a href="mailto:abservar@gmail.com">
+              <FaEnvelope size={50} color="black" />
+            </a>
+          </div>
+        </div>
+        <div className="mainabout">
+          <video
+            src={AboutVideo}
+            width={"100%"}
+            autoPlay
+            playsInline
+            loop
+            muted
+            className="aboutvideo"
+          />
+          <div className="aboutcel">
+            <p>experimental audio-visual research</p>
+            <p>based in brasília, brazil</p>
+            <br />
+            <p>started in the professional field in 2014 as video editor</p>
+            <p>
+              currently studying audio-visual at Instituto Federal de Brasília
+            </p>
+            <br />
+            <p>
+              main interest include cinematography, art direction, motion &
+              sound design
+            </p>
+          </div>
         </div>
         <div className="motions">
           <div className="grid">
@@ -57,6 +100,7 @@ function Homepage() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
