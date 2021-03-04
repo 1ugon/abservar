@@ -1,28 +1,8 @@
-@font-face {
+/* @font-face {
   font-family: "Redaction";
-  src: local("Redaction"), url(../fonts/Redaction-mL8P5.otf) format("opentype");
-}
-
-@font-face {
-  font-family: "Redaction 100";
-  src: local("Redaction 100"),
-    url(../fonts/Redaction100-Regular.otf) format("opentype");
-}
-
-@font-face {
-  font-family: "Redaction 50";
-  src: local("Redaction 50"),
-    url(../fonts/Redaction50-Regular.otf) format("opentype");
-}
-
-@font-face {
-  font-family: "Redaction 10";
-  src: local("Redaction 10"),
-    url(../fonts/Redaction10-Regular.otf) format("opentype");
-}
+} */
 
 * {
-  font-family: "Redaction";
   padding: 0;
   margin: 0;
   vertical-align: baseline;
@@ -47,7 +27,7 @@
   position: absolute;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1366px) {
   .cursor {
     position: relative;
   }

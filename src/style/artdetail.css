@@ -2,3 +2,49 @@
   background-image: url("../assets/Background.png");
   height: 100vh;
 }
+
+.artdetail .grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+}
+
+.artdetail .grid .gridimage {
+  padding: 0 10vh;
+}
+
+.artdetail .grid .gridtext {
+  width: 80vh;
+  padding: 20vh 10vh 0 0;
+}
+
+.imageprimary {
+  padding-top: 10vh;
+  width: 75vh;
+}
+
+.artdetail .gridtext h1 {
+  color: white;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.artdetail .gridtext h2 {
+  color: white;
+  font-weight: normal;
+  margin: 2rem 0;
+}
+
+.artdetail .gridtext h2 {
+  color: white;
+  font-weight: normal;
+  margin: 2rem 0;
+}
+
+.click {
+  color: white;
+}
+
+.play {
+  color: white;
+}

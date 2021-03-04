@@ -15,20 +15,19 @@
 
 .nav {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
 }
 
 .button {
   cursor: pointer;
-  padding: 1rem 0.5rem;
+  padding: 1rem 3rem;
 }
 
 .arts {
   background-color: white;
-  height: 300vh;
   justify-content: center;
   align-items: center;
+  margin: 5rem 0;
 }
 
 .motions {
@@ -44,7 +43,7 @@
   display: grid;
   grid-template-columns: repeat(2, auto);
   justify-content: center;
-  grid-gap: 10%;
+  grid-gap: 5%;
 }
 
 .arts .grid {
@@ -57,13 +56,13 @@
   width: 70vh;
   height: 70vh;
   transition: 1s;
-  margin: 0.5rem;
+  margin: 1rem 0;
 }
 
-.arts .grid img:hover {
+/* .arts .grid img:hover {
   transform: scale(1.15);
   transition: 1s;
-}
+} */
 
 .fadein {
   animation: fadein 3s;

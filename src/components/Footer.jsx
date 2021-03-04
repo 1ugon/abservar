@@ -5,9 +5,9 @@ import "../style/footer.css";
 function Footer() {
   return (
     <div className="footer">
-      <h4>ABSERVAR © {new Date().getFullYear()}</h4>
+      <p>all rights reserved to abservar © {new Date().getFullYear()}</p>
       <a target="_blank" rel="noreferrer" href="https://lugon.dev">
-        made by lugon.dev
+        made by lugon
       </a>
     </div>
   );
