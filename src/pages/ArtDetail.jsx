@@ -4,6 +4,8 @@ import { Link, useParams } from "react-router-dom";
 
 import Footer from "../components/Footer";
 import Error from "../pages/Error";
+import { FaRegCommentDots, FaEnvelope } from "react-icons/fa";
+import ReactWhatsapp from "react-whatsapp";
 import { useScrollToTop } from "../hooks/scroll";
 import { FaArrowLeft, FaPlay } from "react-icons/fa";
 
@@ -59,7 +61,7 @@ function ArtDetail() {
               <div className="gridimage">
                 <img
                   src={getImage()}
-                  className="imageprimary"
+                  className="artimage"
                   onClick={() => setImage(!image)}
                 />
                 {art.imagePrimary === art.imageSecundary ? (
@@ -69,22 +71,73 @@ function ArtDetail() {
                 )}
               </div>
               <div className="gridtext">
-                <h1>{art.title.toLocaleUpperCase()}</h1>
+                <h1>
+                  {art.imagePrimary === art.imageSecundary
+                    ? art.title.toLocaleUpperCase()
+                    : image
+                    ? art.title.toLocaleUpperCase()
+                    : ""}
+                </h1>
                 {art.link === "" ? (
                   ""
                 ) : (
-                  <a target="_blank" rel="noreferrer" href={art.link}>
-                    <FaPlay size={40} color="white" />
-                  </a>
+                  <div className="play">
+                    <a target="_blank" rel="noreferrer" href={art.link}>
+                      <FaPlay size={40} color="white" />
+                    </a>
+                  </div>
                 )}
 
-                <h2>{art.descprim}</h2>
-                <h2>{art.descsec}</h2>
+                <h2>
+                  {art.imagePrimary === art.imageSecundary
+                    ? art.descprim
+                    : image
+                    ? art.descprim
+                    : ""}
+                </h2>
+                <h2>
+                  {art.imagePrimary === art.imageSecundary
+                    ? art.descsec
+                    : image
+                    ? art.descsec
+                    : ""}
+                </h2>
+                <div className="contact">
+                  {art.imagePrimary === art.imageSecundary ? (
+                    ""
+                  ) : image ? (
+                    ""
+                  ) : (
+                    <>
+                      <div className="cbutton" title="whatsapp">
+                        <ReactWhatsapp
+                          number="+556195518261"
+                          message="oi, abservar! 👁"
+                          element="div"
+                        >
+                          <FaRegCommentDots size={50} color="#F8E9C9" />
+                        </ReactWhatsapp>
+                      </div>
+                      <div className="cbutton" title="e-mail">
+                        <a href="mailto:abservar@gmail.com">
+                          <FaEnvelope size={50} color="#F8E9C9" />
+                        </a>
+                      </div>
+                    </>
+                  )}
+                </div>
+                <div className="price">
+                  {art.imagePrimary === art.imageSecundary
+                    ? ""
+                    : art.price === ""
+                    ? ""
+                    : `R$${art.price},00`}
+                </div>
               </div>
             </div>
           </div>
+          <Footer />
         </div>
-        <Footer />
       </>
     );
   }

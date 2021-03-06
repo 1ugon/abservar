@@ -7,7 +7,6 @@ import Footer from "../components/Footer";
 
 import { FaRegCommentDots, FaEnvelope } from "react-icons/fa";
 import ReactWhatsapp from "react-whatsapp";
-
 import { useScrollToTop } from "../hooks/scroll";
 
 import { arts } from "../data/arts";
@@ -95,8 +94,8 @@ function Homepage() {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 }

@@ -33,7 +33,7 @@ export const arts = [
     descprim: "essa track faz parte do ep. NEGLIGÊNCIA (2020)",
     descsec:
       "você pode apoiar esse projeto adquirindo uma das obras originais.",
-    price: 100,
+    price: "",
     imageHome: QuetiapinaHome,
     imagePrimary: Quetiapina,
     imageSecundary: Quetiapina,
@@ -46,7 +46,7 @@ export const arts = [
     descprim: "essa track faz parte do ep. NEGLIGÊNCIA (2020)",
     descsec:
       "você pode apoiar esse projeto adquirindo uma das obras originais.",
-    price: 100,
+    price: "",
     imageHome: FluoxetinaHome,
     imagePrimary: Fluoxetina,
     imageSecundary: Fluoxetina,
@@ -56,7 +56,7 @@ export const arts = [
     slang: "desmemoriado",
     title: "Desmemoriado",
     link: "https://abservar.bandcamp.com/track/desmemoriado",
-    descprim: "colagem sonora usando spray, moeda, xícara, c  have+",
+    descprim: "colagem sonora usando spray, moeda, xícara, chave+",
     descsec: "Ano: - 2020",
     price: "",
     imageHome: DesmemoriadoHome,

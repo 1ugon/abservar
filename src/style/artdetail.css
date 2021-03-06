@@ -6,7 +6,6 @@
 .artdetail .grid {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  justify-content: center;
 }
 
 .artdetail .grid .gridimage {
@@ -18,9 +17,9 @@
   padding: 20vh 10vh 0 0;
 }
 
-.imageprimary {
+.artimage {
   padding-top: 10vh;
-  width: 75vh;
+  max-width: 75vh;
 }
 
 .artdetail .gridtext h1 {
@@ -35,16 +34,100 @@
   margin: 2rem 0;
 }
 
-.artdetail .gridtext h2 {
-  color: white;
-  font-weight: normal;
-  margin: 2rem 0;
-}
-
 .click {
   color: white;
 }
 
 .play {
   color: white;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cbutton {
+  cursor: pointer;
+  padding: 10vh 3vh 10vh;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f8e9c9;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.contactoff,
+.priceoff {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .artdetail {
+    height: 120vh;
+  }
+
+  .artdetail .grid {
+    grid-template-columns: repeat(1, auto);
+  }
+
+  .artdetail .grid .gridimage {
+    width: 36vh;
+  }
+
+  .artdetail .grid .gridtext {
+    width: 55vh;
+    padding: 0;
+  }
+
+  .artimage {
+    padding-top: 10vh;
+    max-width: 37vh;
+  }
+
+  .artdetail .gridtext h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+  }
+
+  .artdetail .gridtext h2 {
+    margin: 1rem 4rem;
+  }
+
+  .click {
+    color: white;
+  }
+
+  .play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cbutton {
+    cursor: pointer;
+    padding: 5vh 3vh 5vh;
+  }
+
+  .price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f8e9c9;
+    font-size: 3rem;
+    font-weight: bold;
+  }
 }
