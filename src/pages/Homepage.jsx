@@ -60,18 +60,20 @@ function Homepage() {
             className="aboutvideo"
           />
           <div className="aboutcel">
-            <p>experimental audio-visual research</p>
-            <p>based in brasília, brazil</p>
-            <br />
-            <p>started in the professional field in 2014 as video editor</p>
-            <p>
-              currently studying audio-visual at Instituto Federal de Brasília
-            </p>
-            <br />
-            <p>
-              main interest include cinematography, art direction, motion &
-              sound design
-            </p>
+            <strong>
+              <p>experimental audio-visual research</p>
+              <p>based in brasília, brazil</p>
+              <br />
+              <p>started in the professional field in 2014 as video editor</p>
+              <p>
+                currently studying audio-visual at Instituto Federal de Brasília
+              </p>
+              <br />
+              <p>
+                main interest include cinematography, art direction, motion &
+                sound design
+              </p>
+            </strong>
           </div>
         </div>
         <div className="motions">

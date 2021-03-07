@@ -11,6 +11,7 @@
 
 .artdetail .grid .gridimage {
   padding: 0 10vh;
+  margin-bottom: 2rem;
 }
 
 .artdetail .grid .gridtext {
@@ -32,11 +33,12 @@
 .artdetail .gridtext h3 {
   color: white;
   font-weight: normal;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 .click {
   color: white;
+  font-size: 0.8rem;
 }
 
 .play {
@@ -71,7 +73,6 @@
 @media (max-width: 1024px) {
   .artdetail {
     width: 100%;
-    height: 100%;
   }
 
   .artdetail .grid {
@@ -81,6 +82,7 @@
   .artdetail .grid .gridimage {
     width: 80%;
     padding: 0 10%;
+    margin-bottom: 2vh;
   }
 
   .artdetail .grid .gridtext {
@@ -97,16 +99,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 5%;
   }
 
   .artdetail .gridtext h3 {
-    margin: 0 4rem;
-    padding-top: 5%;
-  }
-
-  .click {
-    color: white;
+    margin: 1rem 4rem;
+    font-size: 1rem;
   }
 
   .play {
@@ -115,23 +112,11 @@
     justify-content: center;
   }
 
-  .contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   .cbutton {
-    cursor: pointer;
-    padding: 0 3%;
+    padding: 0 3vh;
   }
 
   .price {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #f8e9c9;
-    font-size: 3rem;
-    font-weight: bold;
+    font-size: 2rem;
   }
 }
