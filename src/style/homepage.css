@@ -59,11 +59,6 @@
   margin: 1rem 0;
 }
 
-/* .arts .grid img:hover {
-  transform: scale(1.15);
-  transition: 1s;
-} */
-
 .fadein {
   animation: fadein 3s;
   -moz-animation: fadein 3s;

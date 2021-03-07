@@ -88,20 +88,20 @@ function ArtDetail() {
                   </div>
                 )}
 
-                <h2>
+                <h3>
                   {art.imagePrimary === art.imageSecundary
                     ? art.descprim
                     : image
                     ? art.descprim
                     : ""}
-                </h2>
-                <h2>
+                </h3>
+                <h3>
                   {art.imagePrimary === art.imageSecundary
                     ? art.descsec
                     : image
                     ? art.descsec
                     : ""}
-                </h2>
+                </h3>
                 <div className="contact">
                   {art.imagePrimary === art.imageSecundary ? (
                     ""

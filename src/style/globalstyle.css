@@ -1,13 +1,24 @@
-/* @font-face {
-  font-family: "Redaction";
-} */
+@font-face {
+  font-family: "Liberation Regular";
+  src: url("../fonts/LiberationSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Liberation Bold";
+  src: url("../fonts/LiberationSans-Bold.ttf");
+}
 
 * {
+  font-family: "Liberation Regular";
   padding: 0;
   margin: 0;
   vertical-align: baseline;
   list-style: none;
   border: 0;
+}
+
+h1 {
+  font-family: "Liberation Bold";
 }
 
 .cursor {
