@@ -1,16 +1,16 @@
 .homepage {
-  background-color: white;
+  background-image: url(../assets//lp-background.png);
   height: 100%;
   width: 100%;
 }
 
-.mainabout {
-  height: 85vh;
-  margin: 5vh 0;
+.construction {
+  text-align: center;
 }
 
-.aboutcel {
-  display: none;
+.mainabout {
+  height: 100vh;
+  margin: 10vh;
 }
 
 .nav {
@@ -23,42 +23,13 @@
   padding: 1rem 3rem;
 }
 
-.arts {
-  background-color: white;
-  justify-content: center;
-  align-items: center;
+/* .arts {
 }
 
 .motions {
-  background-color: black;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-}
+} */
 
-.motions .grid {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  justify-content: center;
-  grid-gap: 5%;
-}
-
-.arts .grid {
-  display: grid;
-  grid-template-columns: repeat(1, auto);
-  justify-content: center;
-}
-
-.arts .grid img {
-  width: 70vh;
-  height: 70vh;
-  transition: 1s;
-  margin: 1rem 0;
-}
-
-.fadein {
+/* .fadein {
   animation: fadein 3s;
   -moz-animation: fadein 3s;
   -webkit-animation: fadein 3s;
@@ -74,7 +45,6 @@
   }
 }
 @-moz-keyframes fadein {
-  /* Firefox */
   from {
     opacity: 0;
   }
@@ -83,7 +53,6 @@
   }
 }
 @-webkit-keyframes fadein {
-  /* Safari and Chrome */
   from {
     opacity: 0;
   }
@@ -92,81 +61,24 @@
   }
 }
 @-o-keyframes fadein {
-  /* Opera */
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
   }
-}
+} */
 
 /* iPad Pro */
 @media all and (device-width: 1024px) and (device-height: 1366px) and (orientation: portrait) {
-  .aboutvideo {
-    display: none;
-  }
-
-  .aboutcel {
-    display: inline;
-  }
-
-  .mainabout {
-    margin: 5vh;
-  }
 }
 
 /* iPad */
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
-  .aboutvideo {
-    display: none;
-  }
-
-  .aboutcel {
-    display: inline;
-  }
-
-  .mainabout {
-    margin: 5vh;
-  }
 }
 
 @media (max-width: 900px) {
-  .aboutvideo {
-    display: none;
-  }
-
-  .aboutcel {
-    display: inline;
-  }
 }
 
 @media (max-width: 700px) {
-  .motions .grid img {
-    width: 40vh;
-    height: 40vh;
-  }
-
-  .motions .grid {
-    grid-template-columns: repeat(1, auto);
-  }
-
-  .arts {
-    height: 220vh;
-  }
-
-  .arts .grid {
-    grid-template-columns: repeat(1, auto);
-    grid-gap: 0%;
-  }
-
-  .arts .grid img {
-    width: 50vh;
-    height: 50vh;
-  }
-
-  .mainabout p {
-    text-align: left;
-    padding: 0 5rem;
-  }
 }

@@ -1,15 +1,20 @@
 @font-face {
-  font-family: "Liberation Regular";
-  src: url("../fonts/LiberationSans-Regular.ttf");
+  font-family: "Porpora";
+  src: url("../fonts/Porpora-Regular.ttf");
 }
 
 @font-face {
-  font-family: "Liberation Bold";
-  src: url("../fonts/LiberationSans-Bold.ttf");
+  font-family: "Messapia Bold";
+  src: url("../fonts/Messapia-Bold.otf");
+}
+
+@font-face {
+  font-family: "Messapia Regular";
+  src: url("../fonts/Messapia-Regular.otf");
 }
 
 * {
-  font-family: "Liberation Regular";
+  font-family: "Porpora";
   padding: 0;
   margin: 0;
   vertical-align: baseline;
@@ -18,7 +23,11 @@
 }
 
 h1 {
-  font-family: "Liberation Bold";
+  font-family: "Messapia Bold";
+}
+
+h2 {
+  font-family: "Messapia Bold";
 }
 
 .cursor {
@@ -47,12 +56,6 @@ h1 {
 
 /* iPad */
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
-  .cursor {
-    position: relative;
-  }
-}
-
-@media (max-width: 700px) {
   .cursor {
     position: relative;
   }
