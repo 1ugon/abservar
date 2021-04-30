@@ -1,11 +1,19 @@
 .footer {
+  background-color: rgba(245, 245, 245, 0.3);
   width: 100%;
-  color: #aaa;
+  color: black;
   padding: 2rem 0;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .footer a {
   text-decoration: none;
-  color: #aaa;
+  color: black;
+}
+
+.footer .side {
+  margin: 0 3rem;
 }

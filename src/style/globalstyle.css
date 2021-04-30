@@ -22,15 +22,22 @@
   border: 0;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1.5rem;
+}
+
+h1,
+h2,
+h3 {
   font-family: "Messapia Bold";
 }
 
-h2 {
-  font-family: "Messapia Bold";
-}
-
-.cursor {
+/* .cursor {
   position: absolute;
   width: 20vh;
   height: 20vh;
@@ -40,7 +47,7 @@ h2 {
   left: var(--x, 0);
   z-index: 2;
   mix-blend-mode: difference;
-}
+} */
 
 .back {
   padding: 1rem;

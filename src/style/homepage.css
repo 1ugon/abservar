@@ -1,21 +1,7 @@
 .homepage {
-  background-image: url(../assets//lp-background.png);
+  background-image: url(../assets//background.png);
   height: 100%;
   width: 100%;
-}
-
-.construction {
-  text-align: center;
-}
-
-.mainabout {
-  height: 100vh;
-  margin: 10vh;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
 }
 
 .button {
@@ -23,11 +9,94 @@
   padding: 1rem 3rem;
 }
 
-/* .arts {
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-navEducation {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 100;
+  background-color: rgb(128, 128, 128, 0.4);
+  padding: 1rem;
+}
+
+.navbar-navSkills {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 100;
+  right: 0;
+  background-color: rgb(128, 128, 128, 0.4);
+  padding: 1rem;
+}
+
+.nav-item {
+  padding: 0.5rem 3rem;
+}
+
+.mainabout {
+  margin-top: 15vh;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainabout video {
+  max-width: 100vh;
+  max-height: 50vh;
 }
 
 .motions {
-} */
+  background: url(../assets//container.png);
+  opacity: 0.7;
+  display: flex;
+  justify-content: flex-end;
+  height: 90vh;
+  margin-left: 60vh;
+  margin-bottom: 10vh;
+}
+
+.motions h1 {
+  text-align: end;
+  padding: 5vh 5vh 0 0;
+}
+
+.motions video {
+  width: 60vh;
+  margin: 5vh;
+}
+
+.arts {
+  background: url(../assets//container.png);
+  opacity: 0.7;
+  height: 75vh;
+  margin: 10vh;
+}
+
+.arts h1 {
+  text-align: end;
+  padding: 5vh 5vh;
+}
+
+.arts img {
+  width: 50vh;
+}
+
+.arts .grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, auto);
+  gap: 10vh;
+  margin: 0 10vh;
+}
+
+.arts .grid .audio {
+  margin: 1vh 10vh;
+}
 
 /* .fadein {
   animation: fadein 3s;
@@ -78,7 +147,60 @@
 }
 
 @media (max-width: 900px) {
-}
+  .homepage img,
+  .homepage video {
+    width: 30vh;
+  }
 
-@media (max-width: 700px) {
+  .homepage h1,
+  .homepage h2,
+  .homepage h3,
+  .homepage h4 {
+    font-size: 0.7rem;
+  }
+
+  .mainabout {
+    margin-top: 0;
+    height: 100vh;
+  }
+
+  .motions {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    margin: 3vh;
+  }
+
+  .motions video {
+    margin: 1vh 10vh;
+    margin-top: 5vh;
+  }
+
+  .motions h1 {
+    text-align: center;
+    padding: 0;
+  }
+
+  .arts {
+    height: 150vh;
+    margin: 3vh;
+  }
+
+  .arts .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+    margin: 0;
+  }
+
+  .arts .grid img {
+    margin-left: 10vh;
+  }
+
+  .arts .grid .audio {
+    margin: 1vh;
+  }
 }

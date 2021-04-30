@@ -2,7 +2,7 @@ import "../style/error.css";
 import React from "react";
 import { Link } from "react-router-dom";
 
-import ErrorVideo from "../assets/ERROR.mp4";
+import ErrorVideo from "../assets/error.mp4";
 import Footer from "../components/Footer";
 
 import { FaArrowLeft } from "react-icons/fa";
