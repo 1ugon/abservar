@@ -82,7 +82,7 @@ function Homepage() {
           </NavbarSkills>
         </div>
         <div className="mainabout">
-          <AwesomeSlider bullets={false}>
+          <AwesomeSlider bullets={false} className="slider">
             <div>
               <video src={CHIQ} controls autoPlay muted />
             </div>

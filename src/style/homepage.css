@@ -38,16 +38,18 @@
 }
 
 .mainabout {
-  margin-top: 15vh;
   height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.mainabout .slider {
+  height: 80vh;
+}
+
 .mainabout video {
-  max-width: 100vh;
-  max-height: 50vh;
+  width: 100%;
 }
 
 .motions {
@@ -147,8 +149,8 @@
 }
 
 @media (max-width: 900px) {
-  .homepage img,
-  .homepage video {
+  .homepage .arts img,
+  .homepage .motions video {
     width: 30vh;
   }
 
@@ -160,8 +162,11 @@
   }
 
   .mainabout {
-    margin-top: 0;
-    height: 100vh;
+    height: 70vh;
+  }
+
+  .mainabout .slider {
+    height: 30vh;
   }
 
   .motions {
