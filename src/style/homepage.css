@@ -1,5 +1,5 @@
 .homepage {
-  background-image: none;
+  background-image: url("https://i.ibb.co/G7D57K1/background.png");
   height: 100%;
   width: 100%;
 }
@@ -51,7 +51,7 @@
 }
 
 .motions {
-  background-image: none;
+  background-color: #eeeeee;
   opacity: 0.7;
   display: flex;
   justify-content: flex-end;
@@ -71,7 +71,7 @@
 }
 
 .arts {
-  background-image: none;
+  background-color: #eeeeee;
   opacity: 0.7;
   height: 75vh;
   margin: 10vh;
