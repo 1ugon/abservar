@@ -21,21 +21,21 @@ import DESMEMORIADO from "../assets/arts/DESMEMORIADO.png";
 import "react-awesome-slider/dist/styles.css";
 
 function Homepage() {
-  /* useScrollToTop(); */
+  useScrollToTop();
 
-  /*   function fadeIn() {
-    const images = document.querySelector(".motions");
+  function fadeIn() {
+    const images = document.querySelector(".arts");
     const fade =
       document.querySelector(".fade") || document.querySelector(".fadein");
     if (images === null) {
     } else {
-      this.scrollY >= images.scrollHeight + 50
+      this.scrollY >= images.scrollHeight
         ? (fade.className = "fadein")
         : (fade.className = "fade");
     }
   }
 
-  window.addEventListener("scroll", fadeIn, false); */
+  window.addEventListener("scroll", fadeIn, false);
 
   return (
     <>
@@ -101,37 +101,37 @@ function Homepage() {
             <video src={JANELA} autoPlay muted loop />
           </div>
         </div>
-        {/* <div className="fade"> */}
-        <div className="arts">
-          <h1>EP. "NEGLIGÊNCIA" - 2020</h1>
-          <div className="grid">
-            <div>
-              <img src={QUETIAPINA} />
-              <ReactAudioPlayer
-                src="https://www.learningcontainer.com/wp-content/uploads/2020/02/Sample-OGG-File.ogg"
-                controls
-                className="audio"
-              />
-            </div>
-            <div>
-              <img src={MORTELENTA} />
-              <ReactAudioPlayer
-                src="https://www.learningcontainer.com/wp-content/uploads/2020/02/Sample-OGG-File.ogg"
-                controls
-                className="audio"
-              />
-            </div>
-            <div>
-              <img src={FLUOXETINA} />
-              <ReactAudioPlayer
-                src="https://www.learningcontainer.com/wp-content/uploads/2020/02/Sample-OGG-File.ogg"
-                controls
-                className="audio"
-              />
+        <div className="fade">
+          <div className="arts">
+            <h1>EP. "NEGLIGÊNCIA" - 2020</h1>
+            <div className="grid">
+              <div>
+                <img src={QUETIAPINA} />
+                <ReactAudioPlayer
+                  src="https://www.learningcontainer.com/wp-content/uploads/2020/02/Sample-OGG-File.ogg"
+                  controls
+                  className="audio"
+                />
+              </div>
+              <div>
+                <img src={MORTELENTA} />
+                <ReactAudioPlayer
+                  src="https://www.learningcontainer.com/wp-content/uploads/2020/02/Sample-OGG-File.ogg"
+                  controls
+                  className="audio"
+                />
+              </div>
+              <div>
+                <img src={FLUOXETINA} />
+                <ReactAudioPlayer
+                  src="https://www.learningcontainer.com/wp-content/uploads/2020/02/Sample-OGG-File.ogg"
+                  controls
+                  className="audio"
+                />
+              </div>
             </div>
           </div>
         </div>
-        {/* </div> */}
         <Footer />
       </div>
     </>

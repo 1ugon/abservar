@@ -7,7 +7,7 @@ function Footer() {
   return (
     <div className="footer">
       <div className="side">
-        <a target="_blank" rel="noreferrer" href="https://lugon.dev">
+        <a target="_blank" rel="noreferrer" href="mailto:abservar@gmail.com">
           <FaEnvelope size={50} color="black" />
         </a>
       </div>
@@ -19,10 +19,14 @@ function Footer() {
         </a>
       </div>
       <div className="side">
-        <a target="_blank" rel="noreferrer" href="https://lugon.dev">
+        <a target="_blank" rel="noreferrer" href="https://vimeo.com/abservar">
           <FaVimeo size={40} color="black" />
         </a>
-        <a target="_blank" rel="noreferrer" href="https://lugon.dev">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.instagram.com/abservar/"
+        >
           <FaInstagram size={40} color="black" />
         </a>
       </div>
