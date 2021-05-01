@@ -1,5 +1,5 @@
 .homepage {
-  background-image: url("../assets/background.png");
+  background-image: url(/src/assets/background.png);
   height: 100%;
   width: 100%;
 }
@@ -51,7 +51,7 @@
 }
 
 .motions {
-  background-image: url("../assets/container.png");
+  background-image: url(/src/assets/container.png);
   opacity: 0.7;
   display: flex;
   justify-content: flex-end;
@@ -71,7 +71,7 @@
 }
 
 .arts {
-  background-image: url("../assets/container.png");
+  background-image: url(/src/assets/container.png);
   opacity: 0.7;
   height: 75vh;
   margin: 10vh;
