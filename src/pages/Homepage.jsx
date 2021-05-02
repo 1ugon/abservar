@@ -10,8 +10,8 @@ import SEISM from "../assets/videos/6M.mp4";
 import CHIQ from "../assets/videos/CHIQ.mp4";
 import VARANDAS from "../assets/videos/VARANDAS.mp4";
 
-import GRAYBALL from "../assets/motions/GRAYBALL.mp4";
-import JANELA from "../assets/motions/JANELA.mp4";
+import GRAYBALL from "../assets/motions/GRAYBALL.gif";
+import JANELA from "../assets/motions/JANELA.gif";
 
 import FLUOXETINA from "../assets/arts/FLUOXETINA.png";
 import MORTELENTA from "../assets/arts/MORTELENTA.png";
@@ -24,12 +24,12 @@ function Homepage() {
   useScrollToTop();
 
   function fadeIn() {
-    const images = document.querySelector(".arts");
+    const images = document.querySelector(".motions");
     const fade =
       document.querySelector(".fade") || document.querySelector(".fadein");
     if (images === null) {
     } else {
-      this.scrollY >= images.scrollHeight
+      this.scrollY >= images.scrollHeight + 50
         ? (fade.className = "fadein")
         : (fade.className = "fade");
     }
@@ -97,8 +97,8 @@ function Homepage() {
         <div className="motions">
           <div>
             <h1>experimentos de motion design"</h1>
-            <video src={GRAYBALL} autoPlay muted loop />
-            <video src={JANELA} autoPlay muted loop />
+            <img src={GRAYBALL} alt="a gif" />
+            <img src={JANELA} alt="a gif" />
           </div>
         </div>
         <div className="fade">
