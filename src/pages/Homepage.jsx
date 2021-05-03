@@ -27,7 +27,7 @@ function Homepage() {
     const fade =
       document.querySelector(".fade") || document.querySelector(".fadein");
     if (fade != null) {
-      if (this.scrollY >= fade.scrollHeight - 10) fade.className = "fadein";
+      if (this.scrollY >= fade.scrollHeight) fade.className = "fadein";
     }
   }
 
