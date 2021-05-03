@@ -24,14 +24,10 @@ function Homepage() {
   useScrollToTop();
 
   function fadeIn() {
-    const images = document.querySelector(".motions");
     const fade =
       document.querySelector(".fade") || document.querySelector(".fadein");
-    if (images === null) {
-    } else {
-      this.scrollY >= images.scrollHeight + 50
-        ? (fade.className = "fadein")
-        : (fade.className = "fade");
+    if (fade != null) {
+      if (this.scrollY >= fade.scrollHeight - 10) fade.className = "fadein";
     }
   }
 

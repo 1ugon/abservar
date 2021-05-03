@@ -37,7 +37,7 @@ h3 {
   font-family: "Messapia Bold";
 }
 
-/* .cursor {
+.cursor {
   position: absolute;
   width: 20vh;
   height: 20vh;
@@ -47,7 +47,7 @@ h3 {
   left: var(--x, 0);
   z-index: 2;
   mix-blend-mode: difference;
-} */
+}
 
 .back {
   padding: 1rem;
@@ -63,6 +63,12 @@ h3 {
 
 /* iPad */
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+  .cursor {
+    position: relative;
+  }
+}
+
+@media (max-width: 1000px) {
   .cursor {
     position: relative;
   }
