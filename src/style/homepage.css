@@ -101,10 +101,10 @@
 }
 
 .fadein {
-  animation: fadein 5s;
-  -moz-animation: fadein 5s;
-  -webkit-animation: fadein 5s;
-  -o-animation: fadein 5s;
+  animation: fadein 7s;
+  -moz-animation: fadein 7s;
+  -webkit-animation: fadein 7s;
+  -o-animation: fadein 7s;
 }
 
 @keyframes fadein {
