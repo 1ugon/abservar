@@ -22,6 +22,14 @@
   border: 0;
 }
 
+:root {
+  --white: #eeeeee;
+  --darkwhite: #cccccc;
+  --grey: #999999;
+  --darkgrey: #666666;
+  --black: #333333;
+}
+
 h1,
 h2,
 h3,
@@ -29,6 +37,7 @@ h4,
 h5,
 h6 {
   font-size: 1.5rem;
+  color: var(--darkgrey);
 }
 
 h1,

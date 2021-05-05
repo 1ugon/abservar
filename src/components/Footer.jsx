@@ -1,6 +1,8 @@
 import React from "react";
 import { FaEnvelope, FaVimeo, FaInstagram } from "react-icons/fa";
 
+import { Link } from "react-router-dom";
+
 import "../style/footer.css";
 
 function Footer() {
@@ -12,11 +14,9 @@ function Footer() {
         </a>
       </div>
       <div>
-        <p>abservar © {new Date().getFullYear()}</p>
-        <br />
-        <a target="_blank" rel="noreferrer" href="https://lugon.dev">
-          made by lugon
-        </a>
+        <Link to="/about">
+          <h1>sobre</h1>
+        </Link>
       </div>
       <div className="side">
         <a target="_blank" rel="noreferrer" href="https://vimeo.com/abservar">

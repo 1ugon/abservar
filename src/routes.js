@@ -1,7 +1,7 @@
 import { Switch, Route } from "react-router-dom";
 
 import Homepage from "./pages/Homepage";
-import ArtsDetails from "./pages/ArtsDetails";
+import About from "./pages/About";
 import Error from "./pages/Error";
 
 export default function Routes() {
@@ -10,8 +10,8 @@ export default function Routes() {
       <Route exact path="/">
         <Homepage />
       </Route>
-      <Route exact path="/arts/">
-        <ArtsDetails />
+      <Route exact path="/about">
+        <About />
       </Route>
       <Route path="*">
         <Error />

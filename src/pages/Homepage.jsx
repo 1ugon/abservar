@@ -38,7 +38,7 @@ function Homepage() {
     <>
       <span className="cursor" />
       <div className="homepage">
-        <div className="nav">
+        {/*         <div className="nav">
           <NavbarEducation>
             <li className="nav-item">
               <h3>Avançado em Cinema e Televisão (200h)</h3>
@@ -77,7 +77,7 @@ function Homepage() {
               <h4>Inglês</h4>
             </li>
           </NavbarSkills>
-        </div>
+        </div> */}
         <div className="mainabout">
           <AwesomeSlider bullets={false} className="slider">
             <div>

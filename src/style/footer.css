@@ -1,12 +1,21 @@
 .footer {
-  background-color: rgba(245, 245, 245, 0.3);
+  background-color: var(--white);
   width: 100%;
   color: black;
-  padding: 2rem 0;
+  padding: 1rem 0;
   text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.footer h1 {
+  font-size: 2rem;
+}
+
+.footer h1:hover {
+  color: var(--black);
+  transition: 1s;
 }
 
 .footer a {
